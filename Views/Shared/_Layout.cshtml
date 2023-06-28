@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UrbanKicks</title>
+    <!-- ======== BOOTSTRAP LINK ======== -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- ======== MAIN CSS site.css ======== -->
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- ======== Boxicons CSS ======== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="l-header" id="header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bxs-grid'></i>
+            </div>
+
+            <a href="#" class="nav__logo">Rody</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#featured" class="nav__link">Featured</a></li>
+                    <li class="nav__item"><a href="#women" class="nav__link">Women</a></li>
+                    <li class="nav__item"><a href="#new" class="nav__link">New</a></li>
+                    <li class="nav__item"><a href="#shop" class="nav__link">Shop</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav__shop">
+                <i class='bx bx-shopping-bag'></i>
+            </div>
+
+        </nav>
+    </header>
+    <div >
+        <main role="main" >
+            @RenderBody()
+        </main>
+    </div>
+
+    @* <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - UrbanKicks - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer> *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sergehountondji/Downloads/Work/SergeCodeFirst/Project/UrbanKicks/UrbanKicks.csproj": {}
+  },
+  "projects": {
+    "/Users/sergehountondji/Downloads/Work/SergeCodeFirst/Project/UrbanKicks/UrbanKicks.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sergehountondji/Downloads/Work/SergeCodeFirst/Project/UrbanKicks/UrbanKicks.csproj",
+        "projectName": "UrbanKicks",
+        "projectPath": "/Users/sergehountondji/Downloads/Work/SergeCodeFirst/Project/UrbanKicks/UrbanKicks.csproj",
+        "packagesPath": "/Users/sergehountondji/.nuget/packages/",
+        "outputPath": "/Users/sergehountondji/Downloads/Work/SergeCodeFirst/Project/UrbanKicks/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sergehountondji/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/x64/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

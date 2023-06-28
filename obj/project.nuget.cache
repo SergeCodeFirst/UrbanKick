@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rYCvOxJQCPDUsJlCa20lw4dXCtcEEqKeHUC5aEvmOsRV/cJhgZnQtuXoMqK5XBYPpsphU1dJzR7VKACL31TgjQ==",
+  "success": true,
+  "projectFilePath": "/Users/sergehountondji/Downloads/Work/SergeCodeFirst/Project/UrbanKicks/UrbanKicks.csproj",
+  "expectedPackageFiles": [
+    "/Users/sergehountondji/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.17/microsoft.netcore.app.host.osx-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
