@@ -143,7 +143,7 @@ img{
   .nav__menu{
     position: fixed;
     top: var(--header-height);
-    left: 0;
+    left: -100%;
     width: 70%;
     height: 100vh;
     padding: 2rem;
@@ -151,6 +151,41 @@ img{
     transition: .5s;
   }
 }
+
+.nav__item{
+  margin-bottom: var(--mb-4);
+}
+
+.nav__logo{
+  font-weight: var(--font-semi-bold);
+}
+
+.nav__toggle,
+.nav__shop{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+
 /* Show menu */
+.show{
+  left: 0;
+}
+
+.active{
+  position: relative;
+}
+
+.active::before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  bottom: -.5rem;
+  left: 45%;
+  background-color: var(--dark-color);
+  border-radius: 50%;
+}
+
 /* Active menu  */
 /* Active Link  */
