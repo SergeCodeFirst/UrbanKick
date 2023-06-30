@@ -71,7 +71,7 @@ body{
 }
 
 h1,h2,h3,p,ul{
-  margin: 0 !important;
+  margin: 0 ;
 }
 
 ul{
@@ -79,7 +79,10 @@ ul{
   list-style: none;
 }
 
-nav a{
+
+nav a,
+section a
+{
   text-decoration: none;
   color: var(--dark-color);
 }
@@ -124,14 +127,16 @@ img{
 
 .l-header{
   width: 100%;
-  position: fixed;
+  background-color: var(--dark-color-lighten);
+  position: sticky;
+  /* position: fixed; */
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--dark-color-lighten);
 }
 
 /*===== NAV =====*/
+
 .nav{
   height: var(--header-height);
   display: flex;
@@ -172,6 +177,7 @@ img{
   left: 0;
 }
 
+/* Active Link  */
 .active{
   position: relative;
 }
@@ -187,5 +193,9 @@ img{
   border-radius: 50%;
 }
 
-/* Active menu  */
-/* Active Link  */
+/* Change Color header */
+
+.scroll-header{
+  background-color: var(--white-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
