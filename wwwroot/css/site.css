@@ -79,8 +79,6 @@ ul{
   list-style: none;
 }
 
-
-
 nav a,
 section a
 {
@@ -97,7 +95,7 @@ img{
 /*===== CLASS CSS =====*/
 .section-title{
   position: relative;
-  font-size: var(--big-font-size);
+  font-size: var(--bigger-font-size);
   margin-top: var(--mb-4);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -200,4 +198,41 @@ img{
 .scroll-header{
   background-color: var(--white-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+
+/*===== FOOTER =====*/
+
+.footer__container{
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.footer__box{
+  margin-bottom: var(--mb-4);
+}
+
+.footer__box a{
+  color: var(--dark-color);
+}
+
+.footer__title{
+  font-size: var(--big-font-size);
+}
+
+.footer__link{
+  display: block;
+  width: max-content;
+  margin-bottom: var(--mb-1);
+}
+
+.footer__social{
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+}
+
+.footer__copy{
+  padding-top: 3rem;
+  font-size: var(--smaller-font-size);
+  color: var(--dark-color-light);
+  text-align: center;
 }
