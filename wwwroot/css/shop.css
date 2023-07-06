@@ -1,0 +1,15 @@
+
+.sneaker__pages{
+    margin-bottom: var(--mb-6);
+}
+
+.sneaker__pag{
+    padding: .5rem 1rem;
+    border: 1px solid var(--dark-color);
+    transition: .3s;
+}
+
+.sneaker__pag:hover{
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}

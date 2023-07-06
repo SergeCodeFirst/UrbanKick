@@ -23,6 +23,12 @@ namespace UrbanKicks.Controllers
             return View();
         }
 
+        [HttpGet("shop")]
+        public IActionResult Shop()
+        {
+            return View("Shop");
+        }
+
         public IActionResult Privacy()
         {
             return View();

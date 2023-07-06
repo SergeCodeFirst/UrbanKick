@@ -62,7 +62,7 @@ html{
 }
 
 body{
-  margin: var(--header-height) 0 0 0;
+  margin: 0 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
@@ -79,11 +79,11 @@ ul{
   list-style: none;
 }
 
-nav a,
-section a
+
+.nav__item a
 {
-  text-decoration: none;
-  color: var(--dark-color);
+  text-decoration: none !important; 
+  color: var(--dark-color) !important;
 }
 
 img{

@@ -42,3 +42,4 @@
 /Users/sergehountondji/Downloads/Work/SergeCodeFirst/Project/UrbanKicks/obj/Debug/net5.0/UrbanKicks.genruntimeconfig.cache
 /Users/sergehountondji/Downloads/Work/SergeCodeFirst/Project/UrbanKicks/obj/Debug/net5.0/ref/UrbanKicks.dll
 /Users/sergehountondji/Downloads/Work/SergeCodeFirst/Project/UrbanKicks/obj/Debug/net5.0/UrbanKicks.csproj.CopyComplete
+/Users/sergehountondji/Downloads/Work/SergeCodeFirst/Project/UrbanKicks/obj/Debug/net5.0/Razor/Views/Home/Shop.cshtml.g.cs
