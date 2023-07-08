@@ -1,5 +1,6 @@
 
 .sneaker__pages{
+    margin-top: var(--mb-6);
     margin-bottom: var(--mb-6);
 }
 

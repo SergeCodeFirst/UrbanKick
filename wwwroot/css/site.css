@@ -40,16 +40,6 @@
   --rotate-img: rotate(-30deg);
 }
 
-@media screen and (min-width: 768px) {
-  :root{
-    --big-font-size: 1.5rem;
-    --bigger-font-size: 2rem;
-    --biggest-font-size: 3rem;
-    --normal-font-size: 1em;
-    --smaller-font-size: .875rem;
-  }
-}
-
 /*===== BASE =====*/
 *,::before,::after{
   margin: 0;
@@ -144,18 +134,6 @@ img{
   align-items: center;
 }
 
-@media screen and (max-width: 768px){
-  .nav__menu{
-    position: fixed;
-    top: var(--header-height);
-    left: -100%;
-    width: 70%;
-    height: 100vh;
-    padding: 2rem;
-    background-color: var(--white-color);
-    transition: .5s;
-  }
-}
 
 .nav__item{
   margin-bottom: var(--mb-4);
@@ -169,12 +147,6 @@ img{
 .nav__shop{
   font-size: 1.3rem;
   cursor: pointer;
-}
-
-
-/* Show menu */
-.show{
-  left: 0;
 }
 
 /* Active Link  */
@@ -212,8 +184,15 @@ img{
 }
 
 .footer__box a{
+  text-decoration: none;
   color: var(--dark-color);
 }
+
+.footer__box a:hover{
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
 
 .footer__title{
   font-size: var(--big-font-size);
@@ -235,4 +214,72 @@ img{
   font-size: var(--smaller-font-size);
   color: var(--dark-color-light);
   text-align: center;
+}
+
+
+/* =========  MEDIA QUERIES ========= */
+@media screen and (min-width: 768px) {
+  :root{
+    --big-font-size: 1.5rem;
+    --bigger-font-size: 2rem;
+    --biggest-font-size: 3rem;
+    --normal-font-size: 1em;
+    --smaller-font-size: .875rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .nav__menu{
+    position: fixed;
+    top: var(--header-height);
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    padding: 2rem;
+    background-color: var(--white-color);
+    transition: .5s;
+  }
+
+  .show{
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
+
+  .section{
+    padding: 4rem 0 3rem;
+  }
+
+  .section-title::after{
+    width: 76px;
+  }
+
+  .nav{
+    height: 3rem;
+  }
+
+  .nav__menu{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__list{
+    height: 100%;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .nav__item{
+    margin-left: var(--mb-6);
+    margin-bottom: 0;
+  }
+
+  .nav__toggle{
+    display: none;
+  }
 }

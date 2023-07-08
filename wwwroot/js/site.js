@@ -35,11 +35,11 @@ function scrollActive(){
         const sectionTop = current.offsetHeight - 50
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector(".nav__menu a[href*=" + sectionId+"]").classList.add('active')
-        } else{
-            document.querySelector(".nav__menu a[href*=" + sectionId+"]").classList.remove('avtive')
-        }
+        // if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        //     document.querySelector(".nav__menu a[href*=" + sectionId+"]").classList.add('active')
+        // } else{
+        //     document.querySelector(".nav__menu a[href*=" + sectionId+"]").classList.remove('avtive')
+        // }
     })
 
 }
