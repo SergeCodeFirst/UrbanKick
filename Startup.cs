@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using UrbanKicks.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace UrbanKicks
 {
@@ -22,6 +24,7 @@ namespace UrbanKicks
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<MyContext>(options => options.UseSqlServer(Configuration["DBInfo:ConnectionString"]));
             services.AddControllersWithViews();
         }
 

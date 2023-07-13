@@ -12,10 +12,12 @@ namespace UrbanKicks.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private MyContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, MyContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -27,6 +29,12 @@ namespace UrbanKicks.Controllers
         public IActionResult Shop()
         {
             return View("Shop");
+        }
+
+        [HttpGet("test")]
+        public IActionResult Test()
+        {
+            return View("Test");
         }
 
         public IActionResult Privacy()
