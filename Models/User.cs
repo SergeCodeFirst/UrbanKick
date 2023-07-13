@@ -18,7 +18,7 @@ namespace UrbanKicks.Models
         public DateTime createdAt {get;set;} = DateTime.Now; 
         public DateTime updatedAt {get;set;} = DateTime.Now;
 
-        // list of ShippingAddress
+        // list of all ShippingAddress our user has
         public List<ShippingAddress> userShippingAddresses {get;set;}
 
         // list of Order

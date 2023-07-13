@@ -14,12 +14,29 @@ namespace UrbanKicks.Models
         public DateTime createdAt {get;set;} = DateTime.Now;
         public DateTime updatedAt {get;set;} = DateTime.Now;
 
-        // order Id
+        // order id with an instance to get info
         public int orderId {get;set;}
-        // order instaces to get info
         public Order myOrder {get;set;}
 
-        // list of orders
+        // list of all orders our product is part of
         List <Order> allOrders {get;set;}
+
+        // list of product size our product has
+        List <ProductSize> myProductSize {get;set;}
+
+        // category id with an instance to get info
+        public int categoryId {get;set;}
+        public Category myCategory {get;set;}
+
+        // brant id with an instance to get info
+        public int brandId {get;set;}
+        public Brand myBrand {get;set;}
+
+        // Collection id with an instance to get info
+        public int collectionId {get;set;}
+        public Collection myCollection {get;set;}
+
+        // list of all Collection our product is part of
+        List <Collection> allCollections {get;set;}
     }
 }

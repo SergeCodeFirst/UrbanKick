@@ -15,12 +15,11 @@ namespace UrbanKicks.Models
         public DateTime createdAt {get;set;} = DateTime.Now;
         public DateTime updatedAt {get;set;} = DateTime.Now;
 
-        // user id 
+        // User id with an instance to get info
         public int userId {get;set;}
-        // A user class
         public User myUser {get;set;}
 
-        // list of Order 
+        // list of all Orders to or shipping address
         public List<Order> myOrders {get;set;}
 
     }
