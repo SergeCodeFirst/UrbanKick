@@ -15,8 +15,5 @@ namespace UrbanKicks.Models
         // list of all products part of a collection
         List <Product> allProducts {get;set;}
 
-        // product id with an instance to get info
-        public int productId {get;set;}
-        public Product myProduct {get;set;}
     }
 }
